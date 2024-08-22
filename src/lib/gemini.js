@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+// Hardcoded API key for debugging purposes
+const API_KEY = "AIzaSyCawzKxqyLlz6jFqYTykNzEvoUVcspQT7Q";
 const BASE_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent";
 

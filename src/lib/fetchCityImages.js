@@ -1,5 +1,6 @@
 export const fetchCityImages = async (cities) => {
-  const apiKey = process.env.NEXT_PUBLIC_UNSPLASH_API_KEY;
+  // Hardcoded Unsplash API key for debugging purposes
+  const apiKey = "BaAOs9PVix8v5rM2UGTPXStxfQFMqoyT2T2wm5ARVJs";
   const promises = cities.map((city) => {
     const url = `https://api.unsplash.com/search/photos?query=${city}&client_id=${apiKey}`;
     return fetch(url)
