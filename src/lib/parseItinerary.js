@@ -1,10 +1,7 @@
 export const parseItinerary = (itineraryText) => {
   let cleanedText = itineraryText.trim();
-  console.log("Original Itinerary Text:", cleanedText);
 
   cleanedText = cleanedText.replace(/^\* /gm, "");
-
-  console.log("Cleaned Itinerary Text:", cleanedText);
 
   const result = { heading: "", days: [] };
 
@@ -40,6 +37,5 @@ export const parseItinerary = (itineraryText) => {
     result.days.push(day);
   }
 
-  console.log("Parsed Itinerary:", JSON.stringify(result, null, 2));
   return result;
 };
